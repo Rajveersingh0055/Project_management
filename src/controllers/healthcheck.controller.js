@@ -2,7 +2,7 @@ import {ApiResponse} from '../utils/api_response.js';
 import { asyncHandler } from '../utils/async_handler.js';
 
 /*
-const healthCheack = async (req,res, next)=>{
+const healthCheck = async (req,res, next)=>{
     try {
         const user = await getUserFromDb()
      res
@@ -12,7 +12,6 @@ const healthCheack = async (req,res, next)=>{
         next(error);
     }
 }
-
 */
 
 const  healthCheck = asyncHandler(async(req,res) => {

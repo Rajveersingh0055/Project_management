@@ -1,6 +1,6 @@
 import mongoose, {Schema} from "mongoose";
 import bcrypt from "bcryptjs";
-import { jwt } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import crypto from "crypto";
 
 const userSchema = new Schema({
@@ -34,7 +34,7 @@ const userSchema = new Schema({
     },
     fullName:{
         type: String,
-        required: true,
+        //required: false,
         trim: true,
     },
     password:{
